@@ -128,12 +128,12 @@ while True:
             boardMove(theBoard, playerLetter, move)
 
             if winnerCheck(theBoard, playerLetter):
-                drawBoard(theBoard)
+                displayBoard(theBoard)
                 print('Hooray! You have won the game!')
                 gameIsPlaying = False
             else:
                 if fullBoardCheck(theBoard):
-                    drawBoard(theBoard)
+                    displayBoard(theBoard)
                     print('The game is a tie!')
                     break
                 else:
@@ -149,7 +149,7 @@ while True:
                 gameIsPlaying = False
             else:
                 if fullBoardCheck(theBoard):
-                    drawBoard(theBoard)
+                    displayBoard()(theBoard)
                     print('The game is a tie!')
                     break
                 else:
@@ -157,4 +157,4 @@ while True:
 
     if not replayGame():
         break
-# end_game
+# End the game
